@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-yyh*bva*&jyggq5hcefhx+v18)o9($5vr&c6#bva8-!cy*0k51
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", 'farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id',"https"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", 'farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id']
 
 
 # Application definition
@@ -122,3 +122,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id/", "https://farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id/>"]

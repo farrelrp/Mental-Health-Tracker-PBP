@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-yyh*bva*&jyggq5hcefhx+v18)o9($5vr&c6#bva8-!cy*0k51
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", 'farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id',"https://farrel.reksa:d-vFuPHmsSer1TEcmxVaDtwqOpUH3XTb@pbp.cs.ui.ac.id/farrel.reksa/mentalhealthtracker"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", 'farrel-reksa-mentalhealthtracker.pbp.cs.ui.ac.id',"https"]
 
 
 # Application definition

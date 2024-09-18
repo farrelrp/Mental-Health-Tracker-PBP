@@ -17,7 +17,7 @@ def show_main(request):
     mood_entries = MoodEntry.objects.all()
     context = {
         'npm' : '2306123456',
-        'name': 'Pak Bepe',
+        'name': request.user.username,
         'class': 'PBP E',
         'mood_entries': mood_entries,
         'last_login': request.COOKIES['last_login'],
@@ -29,7 +29,9 @@ def create_mood_entry(request):
     form = MoodEntryForm(request.POST or None)
 
     if form.is_valid() and request.method == "POST":
-        form.save()
+        mood_entry = form.save(commit=False)
+        mood_entry.user = request.user
+        mood_entry.save()
         return redirect('main:show_main')
 
     context = {'form': form}
